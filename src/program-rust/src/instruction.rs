@@ -26,7 +26,7 @@ impl HelloInstruction {
           Ok(i) => {
             return Ok(HelloInstruction::Set(u32::from_le_bytes(i)) 
             ),
-            _ => return Err(ProgramErr::InvalidInstructionData)
+             _ => return Err(ProgramErr::InvalidInstructionData)
           }
         }
       }
